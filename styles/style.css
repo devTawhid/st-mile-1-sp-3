@@ -1,0 +1,237 @@
+/* global css starts */
+:root{
+    --h-family: 'Raleway', sans-serif;
+    --p-family: 'Roboto', sans-serif;
+
+    --primary-color: #333333;
+    --secondary-color: #1C274E;
+
+    --h1-size: 35px;
+    --h2-size: 25px;
+    --h3-size: 20px;
+    --p-size: 16px;
+}
+body{
+   background-color: #E5E5E5; 
+}
+*, ::after, :before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, ::before, ::after{
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    
+}
+.container{
+    max-width:1140px;
+    margin: 0 auto;
+}
+.row{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+/* global css ends */
+
+/* nav section starts */
+.nav{
+    background-color: var(--secondary-color);
+    height: 80px;
+}
+.nav .row{
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+}
+.logo-text{
+    color: white;
+    font-family: var(--h-family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--h1-size);
+    line-height: 80px;
+}
+.nav-items{
+    display: inherit;
+}
+.nav-item{
+    color: #FFFFFF;
+    font-family: var(--h-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--h2-size);
+    line-height: 80px;
+    padding-left: 50px;
+}
+/* nav section ends */
+
+/* about section starts */
+.about{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.about .row{
+    padding: 65px 75px;
+    display: flex;
+}
+.profile-border{
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic{
+    width: 220px;
+    height: 220px;
+    border-radius: 250px;
+    border: 3px solid #000000;
+    overflow: hidden;
+}
+.content{
+    padding-left: 75px;
+}
+.content .name{
+    font-family: var(--h-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: var(--h1-size);
+    line-height: 41px;
+    color: var(--primary-color);
+}
+.content .job-title{
+    font-family: var(--p-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--h3-size);
+    line-height: 23px;
+}
+.content .social-links{
+    margin-top:10px
+}
+.content .skill-chips{
+    display: flex;
+    margin-top: 35px;
+}
+.content .skill-chips .skill-chip{
+    padding: 4px 7px;
+    background: #2E2D5F;
+    border-radius: 5px;
+    color: #efefef;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    margin-right: 10px;
+}
+.content .profile-description{
+    margin-top: 15px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+color: #333333;
+}
+/* about section ends */
+
+/* experience section starts */
+.experience{
+    margin-bottom: 35px;
+}
+.experience .row{
+    padding: 65px 75px;
+}
+.experience .exp-heading{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    color: var(--primary-color);
+    text-align: center;
+}
+.experience .exp-group{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.experience .exp-group .exp-single{
+    display: flex;
+}
+.exp-single .exp-content{
+    margin-left: 18px;
+}
+.exp-single .exp-content .exp-skill{
+    margin-top: 25px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--primary-color);
+}
+.exp-content .exp-company{
+    margin-top: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.exp-content .exp-time{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-color);
+}
+/* experience section ends */
+
+/* works section starts */
+.works img {
+    border-radius: 10px;
+}
+.work-single{
+    margin-bottom: 30px;
+}
+.work-heading{
+    margin-top: 17px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: var(--primary-color);
+}
+.work-sub-heading{
+    margin-top: 6px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--primary-color);
+}
+/* works section ends */
